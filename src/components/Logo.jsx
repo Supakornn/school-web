@@ -17,7 +17,8 @@ const LogoContainer = styled.div`
 `;
 
 const LogoText = styled.h1`
-  font-size: ${(props) => props.theme.fontxxl};
+  font-size: ${(props) => props.theme.fontxl};
+  margin-top: 10px;
   font-family: cursive;
   background-image: linear-gradient(60deg, #7dce13, #f2d388);
   color: black;
@@ -46,7 +47,7 @@ const Logo = () => {
     <LogoContainer>
       <img src={logo} alt="logo" srcset="" />
       <LogoText>
-        <p onClick={() => scrollTo("nav")}>Debsirin</p>
+        <p onClick={() => scrollTo("nav")}>โรงเรียนเทพศิรินทร์</p>
       </LogoText>
     </LogoContainer>
   );

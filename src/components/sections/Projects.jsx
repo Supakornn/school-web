@@ -1,11 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import p1 from "../../assets/projects/p1.png";
-import p2 from "../../assets/projects/p2.png";
-import p3 from "../../assets/projects/p3.png";
-import p4 from "../../assets/projects/p4.png";
-import p5 from "../../assets/projects/p5.png";
-import p6 from "../../assets/projects/p6.png";
+
 // import Confetti from "../Confetti";
 import Button from "../Button";
 const Section = styled.section`
@@ -16,10 +11,10 @@ const Section = styled.section`
 `;
 const Title = styled.h1`
   font-size: ${(props) => props.theme.fontxxl};
-  background-image: linear-gradient(135deg, #F6D242 10%, #FF52E5 100%);
+  background-image: linear-gradient(135deg, #f6d242 10%, #ff52e5 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  -webkit-box-decoration-break: clone
+  -webkit-box-decoration-break: clone;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -27,7 +22,7 @@ const Title = styled.h1`
   border-bottom: 2px solid #f6416c;
   width: fit-content;
   @media (max-width: 40em) {
-    font-size: ${(props) => props.theme.fontxl}
+    font-size: ${(props) => props.theme.fontxl};
   }
 `;
 
@@ -132,40 +127,9 @@ const Projects = () => {
       <Title>Projects</Title>
       <Container>
         <ProjectComponent
-          img={p1}
           name="Portfolio Website"
           subtitle="React"
           link="https://github.com/H3X-T/supakorn.xyz"
-        />
-        <ProjectComponent
-          img={p2}
-          name="Bio"
-          subtitle="HTML CSS JS"
-          link="https://github.com/H3X-T/h3x-t.xyz"
-        />
-        <ProjectComponent
-          img={p3}
-          name="Portfolio Website"
-          subtitle="React"
-          link="https://github.com/H3X-T/react-portfolio-web"
-        />
-        <ProjectComponent
-          img={p4}
-          name="CountDown Web"
-          subtitle="HTML CSS JS"
-          link="https://github.com/H3X-T/countdown"
-        />
-        <ProjectComponent
-          img={p5}
-          name="Portfolio Website"
-          subtitle="HTML CSS JS"
-          link="https://github.com/H3X-T/personal-portfolio-website"
-        />
-        <ProjectComponent
-          img={p6}
-          name="Covid Tracker"
-          subtitle="React"
-          link="https://github.com/H3X-T/covid-tracker"
         />
       </Container>
     </Section>

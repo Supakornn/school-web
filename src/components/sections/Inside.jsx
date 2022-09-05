@@ -1,32 +1,32 @@
 import React, { useRef, useLayoutEffect } from "react";
 import styled from "styled-components";
 import DrawSvg from "../DrawSvg";
-import img1 from "../../assets/edupic/wichai.jpg";
-import img2 from "../../assets/edupic/deb.jpg";
-import Typewriter from "typewriter-effect";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 const Section = styled.section`
-  min-height: 100vh;
+  min-height: 200vh;
   width: 100vw;
   background-color: ${(props) => props.theme.body};
   position: relative;
 `;
 const Title = styled.h1`
   font-size: ${(props) => props.theme.fontxxl};
-  background-image: linear-gradient(135deg, #F6D242 10%, #FF52E5 100%);
+  background-image: linear-gradient(135deg, #7dce13, 10%, #f2d388 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  -webkit-box-decoration-break: clone
+  -webkit-box-decoration-break: clone;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1rem auto;
-  border-bottom: 2px solid #f6416c;
+  border-bottom: 2px solid #5bb318;
   width: fit-content;
   @media (max-width: 40em) {
     font-size: ${(props) => props.theme.fontxl};
+  }
 `;
+
 const Container = styled.div`
   width: 70%;
   height: 200vh;
@@ -128,10 +128,10 @@ const Box = styled.div`
   background-image: linear-gradient(135deg, #dfe9f3 10%, #ffffff 100%);
   color: black;
   padding: 1rem;
-  postion: relative;
-  display:flex;
+  position: relative;
+  display: flex;
   align-items: center;
-  jusify-content: center;
+  justify-content: center;
   flex-wrap: wrap;
 
   .title {
@@ -139,38 +139,26 @@ const Box = styled.div`
     margin-right: 85px;
   }
 
-
   img {
     width: 150px;
     height: 100px;
     margin: 20px;
   }
 
-
   @media (max-width: 48em) {
     font-size: ${(props) => props.theme.fontlg};
     font-weight: 600;
+  }
 `;
 
-const EducationItem = ({ title, subtext, img, addToRef }) => {
+const AwardItem = ({ title, subtext, img, addToRef }) => {
   return (
     <Item ref={addToRef}>
       <ItemContainer>
         <Box>
           <img src={img} alt="pic" />
           <SubTitle className="title">{title}</SubTitle>
-          <Text className="text">
-            <Typewriter
-              className="writer"
-              options={{
-                autoStart: true,
-                loop: true
-              }}
-              onInit={(typewriter) => {
-                typewriter.typeString(`<span>${subtext}</span>`).pauseFor(2000).deleteAll().start();
-              }}
-            />
-          </Text>
+          <Text>{subtext}</Text>
         </Box>
       </ItemContainer>
     </Item>
@@ -185,6 +173,7 @@ const SubTitle = styled.span`
   @media (max-width: 40em) {
     font-size: ${(props) => props.theme.fontlg};
     font-weight: 600;
+  }
 `;
 
 const Text = styled.span`
@@ -203,9 +192,10 @@ const Text = styled.span`
   }
   @media (max-width: 40em) {
     font-size: ${(props) => props.theme.fontxs};
+  }
 `;
 
-const Educations = () => {
+const Inside = () => {
   const revealRefs = useRef([]);
   revealRefs.current = [];
   gsap.registerPlugin(ScrollTrigger);
@@ -239,36 +229,32 @@ const Educations = () => {
   }, []);
 
   return (
-    <Section id="education">
-      <Title>Education</Title>
+    <Section id="inside">
+      <Title>ภายในโรงเรียน</Title>
       <Container>
         <SvgContainer>
           <DrawSvg />
         </SvgContainer>
         <Items>
           <Item>&nbsp;</Item>
-          <EducationItem
+          <AwardItem addToRef={addToRefs} title="ตึกเยาวมาลย์" subtext="ตึกเรียนมัธยมต้น(ม.1-2)" />
+          <AwardItem
             addToRef={addToRefs}
-            title="Primary School"
-            subtext="WichaiWittaya School"
-            img={img1}
+            title="ตึกเทิดพระเกียรติ"
+            subtext="อาคารสำหรับจัดกิจกรรมพิธีของแต่ระดับชั้นและชั้นล่างเป็นห้องอาหารติดแอร์"
           />
-          <EducationItem
+          <AwardItem addToRef={addToRefs} title="ตึกนิภานพดล" subtext="ตึกเรียนมัธยมต้น(ม.3)" />
+          <AwardItem
             addToRef={addToRefs}
-            title="Middle School"
-            subtext="Debsirin School"
-            img={img2}
+            title="ตึกแม้นศึกษาสถาน"
+            subtext="ตึกเรียนมัธยมปลาย(ม.6)"
           />
-          <EducationItem
-            addToRef={addToRefs}
-            title="High School"
-            subtext="Debsirin School"
-            img={img2}
-          />
+          <AwardItem addToRef={addToRefs} title="ตึกภาณุรังสี" subtext="ตึกเรียนมัธยมปลาย(ม.4-5)" />
+          <AwardItem addToRef={addToRefs} title="ตึกโชฏึกเลาหะเศรษฐี" subtext="พิพิธภัณฑ์" />
         </Items>
       </Container>
     </Section>
   );
 };
 
-export default Educations;
+export default Inside;

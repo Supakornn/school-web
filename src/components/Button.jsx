@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-const Btn = styled.button`  
+const Btn = styled.button`
   display: inline-block;
   background-color: ${(props) => props.theme.text};
-  background-image: linear-gradient(90deg, #b92b27, #493240);
-  color: white;
+  background-image: linear-gradient(90deg, #7dce13, #f2d388);
+  color: black;
   outline: none;
-  border none;
+  border: none;
   font-size: ${(props) => props.theme.fontsm};
   padding: 0.9rem 2.3rem;
   border-radius: 50px;
@@ -34,7 +34,7 @@ const Btn = styled.button`
 
   &:hover::after {
     transform: translate(-50%, -50%) scale(1);
-    padding: 0.3rem
+    padding: 0.3rem;
   }
 `;
 const Button = ({ text, link }) => {

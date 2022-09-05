@@ -20,7 +20,9 @@
     "react-use": "^17.3.2",
     "styled-components": "^5.3.3",
     "swiper": "^8.0.6",
+    "three": "^0.144.0",
     "typewriter-effect": "^2.18.2",
+    "vanta": "^0.5.22",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

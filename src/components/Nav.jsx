@@ -152,8 +152,8 @@ const Nav = () => {
         <Menu isclick={click}>
           <MenuItem onClick={() => scrollTo("#nav")}>หน้าแรก</MenuItem>
           <MenuItem onClick={() => scrollTo("#about")}>เกี่ยวกับโรงเรียน</MenuItem>
-          <MenuItem onClick={() => scrollTo("#education")}>ผลงานดีเด่น</MenuItem>
-          <MenuItem onClick={() => scrollTo("#projects")}>ติดต่อโรงเรียน</MenuItem>
+          <MenuItem onClick={() => scrollTo("#inside")}>ภายในโรงเรียน</MenuItem>
+          <MenuItem onClick={() => scrollTo("#")}>ติดต่อโรงเรียน</MenuItem>
           <div className="mobile"></div>
         </Menu>
         <div className="desktop"></div>

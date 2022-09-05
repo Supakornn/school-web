@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Carousel from "../Carousel";
 import Button from "../Button";
 import Typewriter from "typewriter-effect";
+
 const Section = styled.section`
   min-height: 100vh;
   width: 100%;
@@ -60,7 +61,7 @@ const Title = styled.h2`
   margin: 0 auto;
 
   span {
-    background-image: linear-gradient(135deg, #feb692 10%, #ea5455 100%);
+    background-image: linear-gradient(135deg, #7dce13, 10%, #f2d388 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-box-decoration-break: clone;
@@ -106,7 +107,7 @@ const SubTextLight = styled.p`
   font-size: ${(props) => props.theme.fontmd};
   color: ${(props) => `rgba(${props.theme.bodyRgba}, 0.8)`};
   align-self: flex-start;
-  width: 80%;
+  width: 100%;
   margin: 1rem auto;
   font-weight: 400;
   @media (max-width: 64em) {
@@ -157,20 +158,34 @@ const About = () => {
               }}
               onInit={(typewriter) => {
                 typewriter
-                  .typeString(`<span id="Title-1">About Me </span>`)
+                  .typeString(`<span id="Title-1">เกี่ยวกับโรงเรียน</span>`)
                   .pauseFor(200)
                   .deleteAll()
                   .start();
               }}
             />
           </Title>
-          <SubText>
-            My name is Supakorn Ieamgomol, Aka H3XxT, Nickname Gap, <br />
-            I'm {new Date().getFullYear() - 2005} years old, From Thailand.
-          </SubText>
-          <SubTextLight>I'm Fullstack Developer, I have many passion about coding.</SubTextLight>
+          <SubText>โรงเรียนเทพศิรินทร์</SubText>
+          <SubTextLight>
+            (อังกฤษ: Debsirin School, ย่อ: ท.ศ., DS) เป็นโรงเรียนชายล้วน
+            อยู่ภายใต้สังกัดสำนักงานคณะกรรมการการศึกษาขั้นพื้นฐาน กระทรวงศึกษาธิการ
+            เป็นโรงเรียนประจำ วัดเทพศิรินทราวาสราชวรวิหาร ก่อตั้งขึ้นใน 15 มีนาคม พ.ศ. 2428
+            ตามพระราชดำริของพระบาทสมเด็จพระจุลจอมเกล้าเจ้าอยู่หัว ปัจจุบันตั้งอยู่เลขที่ 1466
+            ถนนกรุงเกษม แขวงวัดเทพศิรินทร์ เขตป้อมปราบศัตรูพ่าย กรุงเทพมหานคร
+            โรงเรียนเทพศิรินทร์เป็นโรงเรียนรัฐบาลแห่งเดียวในประเทศไทย
+            ที่มีพระมหากษัตริย์ทรงเข้ารับการศึกษา คือ พระบาทสมเด็จพระปรเมนทรมหาอานันทมหิดล
+            พระอัฐมรามาธิบดินทร รัชกาลที่ 8
+            นอกจากนี้ยังมีนักเรียนเก่าที่ดำรงตำแหน่งสำคัญทางการเมืองมากมาย อาทิ นายกรัฐมนตรีไทย 4 คน
+            รวมถึง นายกรัฐมนตรีคนแรกแห่งมาเลเซีย ปัจจุบันโรงเรียนเทพศิรินทร์มีอายุ 137 ปี
+            นอกจากนี้โรงเรียนเทพศิรินทร์ยังประกอบด้วย โรงเรียนเครือข่ายที่มีคำนำหน้าว่า
+            "เทพศิรินทร์" อีก 10 แห่ง โรงเรียนเทพศิรินทร์เป็นโรงเรียนในกลุ่มจตุรมิตร
+            ร่วมกับโรงเรียนสวนกุหลาบวิทยาลัย โรงเรียนอัสสัมชัญ และโรงเรียนกรุงเทพคริสเตียนวิทยาลัย
+          </SubTextLight>
           <ButtonContainer>
-            <Button text="Contact Me" link="https://www.h3xxt.xyz" />
+            <Button
+              text="ข้อมูลเพิ่มเติม"
+              link="https://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A8%E0%B8%B4%E0%B8%A3%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8Chttps://th.wikipedia.org/wiki/%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B9%80%E0%B8%A3%E0%B8%B5%E0%B8%A2%E0%B8%99%E0%B9%80%E0%B8%97%E0%B8%9E%E0%B8%A8%E0%B8%B4%E0%B8%A3%E0%B8%B4%E0%B8%99%E0%B8%97%E0%B8%A3%E0%B9%8C"
+            />
           </ButtonContainer>
         </Box>
       </Container>

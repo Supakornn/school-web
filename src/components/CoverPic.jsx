@@ -18,7 +18,7 @@ const PicContainer = styled.div`
 const CoverPic = () => {
   return (
     <PicContainer>
-      <img src={main} alt="pic" srcset="" />
+      <img src={main} alt="pic" />
     </PicContainer>
   );
 };
