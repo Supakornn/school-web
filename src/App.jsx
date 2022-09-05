@@ -5,8 +5,7 @@ import Nav from "./components/Nav";
 import Home from "./components/sections/Home";
 import About from "./components/sections/About";
 import Inside from "./components/sections/Inside";
-import Certificates from "./components/sections/Certificates";
-import Projects from "./components/sections/Projects";
+import School from "./components/sections/School";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 function App() {
@@ -18,8 +17,7 @@ function App() {
         <Home />
         <About />
         <Inside />
-        {/* <Certificates /> */}
-        <Projects />
+        <School />
         <Footer />
         <ScrollToTop />
       </ThemeProvider>

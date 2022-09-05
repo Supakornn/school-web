@@ -11,7 +11,7 @@ const Section = styled.section`
 `;
 const Title = styled.h1`
   font-size: ${(props) => props.theme.fontxxl};
-  background-image: linear-gradient(135deg, #f6d242 10%, #ff52e5 100%);
+  background-image: linear-gradient(135deg, #7dce13, 10%, #f2d388 100%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-box-decoration-break: clone;
@@ -19,7 +19,7 @@ const Title = styled.h1`
   justify-content: center;
   align-items: center;
   margin: 1rem auto;
-  border-bottom: 2px solid #f6416c;
+  border-bottom: 2px solid #5bb318;
   width: fit-content;
   @media (max-width: 40em) {
     font-size: ${(props) => props.theme.fontxl};
@@ -114,26 +114,75 @@ const ProjectComponent = ({ img, name = "", subtitle = "", link = "" }) => {
       <Name>{name}</Name>
       <Subtitle>{subtitle}</Subtitle>
       <ButtonContainer>
-        <Button text="Github" link={link} />
+        <Button text="เว็ปโรงเรียน" link={link} />
       </ButtonContainer>
     </Item>
   );
 };
 
-const Projects = () => {
+const School = () => {
   return (
-    <Section id="projects">
+    <Section id="school">
       {/* <Confetti /> */}
-      <Title>Projects</Title>
+      <Title>โรงเรียนในเครือ</Title>
       <Container>
         <ProjectComponent
-          name="Portfolio Website"
-          subtitle="React"
-          link="https://github.com/H3X-T/supakorn.xyz"
+          name="เทพศิรินทร์ร่มเกล้า"
+          subtitle="กรุงเทพมหานคร"
+          link="https://dsr.ac.th/"
+          // img={}
+        />
+        <ProjectComponent
+          name="เทพศิรินทร์คลองสิบสาม"
+          subtitle="ปทุมธานี"
+          link="http://www.dsp.ac.th/"
+          // img={}
+        />
+        <ProjectComponent
+          name="เทพศิรินทร์นนทบุรี"
+          subtitle="นนทบุรี"
+          link="https://www.tsn.ac.th/web/"
+          // img={}
+        />
+        <ProjectComponent
+          name="เทพศิรินทร์พุแค"
+          subtitle="สระบุรี"
+          link="http://www.debsirinphukhae.ac.th/"
+          // img={}
+        />
+        <ProjectComponent
+          name="เทพศิรินทร์ลาดหญ้า"
+          subtitle="กาญจนบุรี"
+          link="http://www.dsl.ac.th/"
+          // img={}
+        />
+        <ProjectComponent
+          name="เทพศิรินทร์ขอนแก่น"
+          subtitle="ขอนแก่น"
+          link="https://dskk.ac.th/"
+          // img={}
+        />
+        <ProjectComponent
+          name="เทพศิรินทร์เชียงใหม่"
+          subtitle="เชียงใหม่"
+          link="http://www.dsc.ac.th/"
+          // img={}
+        />
+        <ProjectComponent
+          name="เทพศิรินทร์๙"
+          subtitle="เชียงใหม่"
+          link="https://www.debsrin9.blogspot.com/"
+          // img={}
+        />
+        <ProjectComponent
+          name="เทพศิรินทร์สมุทรปราการ"
+          subtitle="สมุทรปราการ"
+          link="http://www.debsirinsp.ac.th/"
+          // img={}
         />
       </Container>
     </Section>
   );
 };
 
-export default Projects;
+export default School;

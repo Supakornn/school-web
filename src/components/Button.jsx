@@ -25,7 +25,7 @@ const Btn = styled.button`
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    border: 2px solid #f12711;
+    border: 2px solid #eae509;
     width: 100%;
     height: 100%;
     border-radius: 50px;

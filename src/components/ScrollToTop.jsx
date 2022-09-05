@@ -8,8 +8,8 @@ const Up = styled.div`
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  color: red;
-  background-color: ${(props) => props.theme.body};
+  color: #fff38c;
+  background-color: #7dce13;
   font-size: ${(props) => props.theme.fontxl};
   position: fixed;
   right: 1rem;

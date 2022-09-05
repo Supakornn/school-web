@@ -5,7 +5,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Section = styled.section`
-  min-height: 200vh;
+  min-height: 100vh;
   width: 100vw;
   background-color: ${(props) => props.theme.body};
   position: relative;
@@ -168,7 +168,7 @@ const AwardItem = ({ title, subtext, img, addToRef }) => {
 const SubTitle = styled.span`
   display: block;
   font-size: ${(props) => props.theme.fontxl};
-  color: #ff4e00;
+  color: #5bb318;
   margin: 0 20px;
   @media (max-width: 40em) {
     font-size: ${(props) => props.theme.fontlg};
@@ -237,11 +237,15 @@ const Inside = () => {
         </SvgContainer>
         <Items>
           <Item>&nbsp;</Item>
-          <AwardItem addToRef={addToRefs} title="ตึกเยาวมาลย์" subtext="ตึกเรียนมัธยมต้น(ม.1-2)" />
+          <AwardItem
+            addToRef={addToRefs}
+            title="ตึกเยาวมาลย์"
+            subtext="ตึกเรียนมัธยมต้น(ม.1-2)และข้างล่างเป็นโรงอาหาร"
+          />
           <AwardItem
             addToRef={addToRefs}
             title="ตึกเทิดพระเกียรติ"
-            subtext="อาคารสำหรับจัดกิจกรรมพิธีของแต่ระดับชั้นและชั้นล่างเป็นห้องอาหารติดแอร์"
+            subtext="อาคารสำหรับจัดกิจกรรมพิธีของแต่ระดับชั้นและ ชั้นล่างเป็นห้องอาหารติดแอร์"
           />
           <AwardItem addToRef={addToRefs} title="ตึกนิภานพดล" subtext="ตึกเรียนมัธยมต้น(ม.3)" />
           <AwardItem

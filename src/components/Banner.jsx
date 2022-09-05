@@ -50,9 +50,9 @@ const BtnContainer = styled.div`
 const Banner = () => {
   return (
     <Section>
-      <Title>Contact Me</Title>
+      <Title>ติดต่อโรงเรียน</Title>
       <BtnContainer>
-        <Button text="My Bio" link="https://h3xxt.xyz" />
+        <Button text="เว็ปโรงเรียน" link="https://www.debsirin.ac.th/index.php" />
       </BtnContainer>
     </Section>
   );

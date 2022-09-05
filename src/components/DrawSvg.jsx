@@ -3,6 +3,7 @@ import styled, { keyframes } from "styled-components";
 import Vector from "../Icons/Vector";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
+
 const VectorContainer = styled.div`
   position: absolute;
   top: 0.5rem;
@@ -19,12 +20,15 @@ const VectorContainer = styled.div`
   }
 
   @media (max-width: 48em) {
-    left: 1rem
+    left: 1rem;
+  }
 `;
+
 const Bounce = keyframes`
   form{ transform: translateX(-50%) scale(0.5); }
   to { transform: translateX(-50%) scale(1.2); }
 `;
+
 const Ball = styled.div`
   position: absolute;
   top: 0rem;
@@ -33,11 +37,13 @@ const Ball = styled.div`
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  background-color: #f6416c;
+  background-color: #5bb318;
   animation: ${Bounce} 0.5s linear infinite alternate;
   @media (max-width: 48em) {
-    left: 1rem
+    left: 1rem;
+  }
 `;
+
 const DrawSvg = () => {
   const ref = useRef(null);
   const ballRef = useRef(null);
@@ -72,6 +78,7 @@ const DrawSvg = () => {
       if (t1) t1.kill();
     };
   }, []);
+
   return (
     <>
       <Ball ref={ballRef} />

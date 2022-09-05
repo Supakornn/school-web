@@ -3,9 +3,7 @@ import styled from "styled-components";
 import Banner from "../components/Banner";
 import Logo from "../components/Logo";
 import Facebook from "../Icons/Facebook";
-import Instagram from "../Icons/Instagram";
-import LinkedIn from "../Icons/LinkedIn";
-import Twitter from "../Icons/Twitter";
+
 const Section = styled.section`
   min-height: 100vh;
   height: 100vh;
@@ -75,7 +73,7 @@ const Item = styled.li`
     display: block;
     width: 0%;
     height: 2px;
-    background: #f12711;
+    background: #3d8361;
     transition: width 0.3s ease;
   }
   &:hover::after {
@@ -113,30 +111,20 @@ const Footer = () => {
         <Left>
           <Logo />
           <IconList>
-            <a href="https://www.facebook.com/spkngap/" target="_blank" rel="noreferrer">
+            <a href="https://www.facebook.com/debsirinsch/" target="_blank" rel="noreferrer">
               <Facebook />
-            </a>
-            <a href="https://www.instagram.com/supakornigm/" target="_blank" rel="noreferrer">
-              <Instagram />
-            </a>
-            <a href="https://www.linkedin.com/in/supakornieamgomol/" target="_blank" rel="noreferrer">
-              <LinkedIn />
-            </a>
-            <a href="https://twitter.com/H3XxT_" target="_blank" rel="noreferrer">
-              <Twitter />
             </a>
           </IconList>
         </Left>
         <MenuItem>
-          <Item onClick={() => scrollTo("nav")}>Home</Item>
-          <Item onClick={() => scrollTo("about")}>About</Item>
-          <Item onClick={() => scrollTo("education")}>Educations</Item>
-          {/* <Item onClick={() => scrollTo("certificates")}>Certificates</Item> */}
-          <Item onClick={() => scrollTo("projects")}>Projects</Item>
+          <Item onClick={() => scrollTo("#nav")}>หน้าแรก</Item>
+          <Item onClick={() => scrollTo("#about")}>เกี่ยวกับโรงเรียน</Item>
+          <Item onClick={() => scrollTo("#inside")}>ภายในโรงเรียน</Item>
+          <Item onClick={() => scrollTo("#school")}>โรงเรียนในเครือ</Item>
         </MenuItem>
       </Container>
       <Buttom>
-        <span>&copy; {new Date().getFullYear()} Supakorn.xyz, All rights reserved.</span>
+        <span>&copy; {new Date().getFullYear()} All rights reserved.</span>
         <span>
           Made with &#10084; by{" "}
           <a href="http://github.com/H3XxT" target="_blank" rel="noreferrer">

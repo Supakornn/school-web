@@ -5,9 +5,9 @@ import styled from "styled-components";
 const PicContainer = styled.div`
   width: 100%;
 
-  video {
+  img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
 
   @media (max-width: 64em) {

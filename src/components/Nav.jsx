@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const Section = styled.section`
   width: 100vw;
-  background: linear-gradient(#414755, #6e6d69);
+  background-image: linear-gradient(135deg, #414755 10%, #616161 100%);
 `;
 
 const NavBar = styled.nav`
@@ -138,7 +138,7 @@ const Nav = () => {
   const [click, setClick] = useState(false);
   const scrollTo = (id) => {
     let element = document.querySelector(id);
-    element.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+    element.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });
     setClick(!click);
   };
 
@@ -153,7 +153,8 @@ const Nav = () => {
           <MenuItem onClick={() => scrollTo("#nav")}>หน้าแรก</MenuItem>
           <MenuItem onClick={() => scrollTo("#about")}>เกี่ยวกับโรงเรียน</MenuItem>
           <MenuItem onClick={() => scrollTo("#inside")}>ภายในโรงเรียน</MenuItem>
-          <MenuItem onClick={() => scrollTo("#")}>ติดต่อโรงเรียน</MenuItem>
+          <MenuItem onClick={() => scrollTo("#school")}>โรงเรียนในเครือ</MenuItem>
+          <MenuItem onClick={() => scrollTo("#footer")}>ติดต่อโรงเรียน</MenuItem>
           <div className="mobile"></div>
         </Menu>
         <div className="desktop"></div>
