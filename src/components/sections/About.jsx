@@ -156,7 +156,11 @@ const About = () => {
                 loop: true
               }}
               onInit={(typewriter) => {
-                typewriter.typeString(`<span id="Title-1">About Me </span>`).pauseFor(200).deleteAll().start();
+                typewriter
+                  .typeString(`<span id="Title-1">About Me </span>`)
+                  .pauseFor(200)
+                  .deleteAll()
+                  .start();
               }}
             />
           </Title>
