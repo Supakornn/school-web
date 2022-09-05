@@ -1,21 +1,50 @@
 {
-  "name": "school-web",
+  "name": "supakorn.dev",
+  "version": "0.1.0",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
-  },
   "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@fontsource/fredoka-one": "^4.5.2",
+    "@fontsource/mansalva": "^4.5.3",
+    "@fontsource/patua-one": "^4.5.2",
+    "@fontsource/signika": "^4.5.4",
+    "@testing-library/jest-dom": "^5.16.2",
+    "@testing-library/react": "^12.1.3",
+    "@testing-library/user-event": "^13.5.0",
+    "gsap": "^3.9.1",
+    "normalize.css": "^8.0.1",
+    "react": "^17.0.2",
+    "react-confetti": "^6.0.1",
+    "react-dom": "^17.0.2",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "5.0.0",
+    "react-use": "^17.3.2",
+    "styled-components": "^5.3.3",
+    "swiper": "^8.0.6",
+    "typewriter-effect": "^2.18.2",
+    "web-vitals": "^2.1.4"
   },
-  "devDependencies": {
-    "@types/react": "^18.0.17",
-    "@types/react-dom": "^18.0.6",
-    "@vitejs/plugin-react": "^2.1.0",
-    "vite": "^3.1.0"
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
