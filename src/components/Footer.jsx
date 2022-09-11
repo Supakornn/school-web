@@ -117,10 +117,10 @@ const Footer = () => {
           </IconList>
         </Left>
         <MenuItem>
-          <Item onClick={() => scrollTo("#nav")}>หน้าแรก</Item>
-          <Item onClick={() => scrollTo("#about")}>เกี่ยวกับโรงเรียน</Item>
-          <Item onClick={() => scrollTo("#inside")}>ภายในโรงเรียน</Item>
-          <Item onClick={() => scrollTo("#school")}>โรงเรียนในเครือ</Item>
+          <Item onClick={() => scrollTo("nav")}>หน้าแรก</Item>
+          <Item onClick={() => scrollTo("about")}>เกี่ยวกับโรงเรียน</Item>
+          <Item onClick={() => scrollTo("inside")}>ภายในโรงเรียน</Item>
+          <Item onClick={() => scrollTo("school")}>โรงเรียนในเครือ</Item>
         </MenuItem>
       </Container>
       <Buttom>
