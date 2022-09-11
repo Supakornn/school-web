@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
-import logo from "../assets/mainvideo/logo.png";
+import logo from "../assets/logo.png";
 
 const LogoContainer = styled.div`
   display: flex;

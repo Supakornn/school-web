@@ -1,6 +1,14 @@
 import React from "react";
 import styled from "styled-components";
-
+import s1 from "../../assets/allschool/s1.jpg";
+import s2 from "../../assets/allschool/s2.jpg";
+import s3 from "../../assets/allschool/s3.jpg";
+import s4 from "../../assets/allschool/s4.jpg";
+import s5 from "../../assets/allschool/s5.jpg";
+import s6 from "../../assets/allschool/s6.jpg";
+import s7 from "../../assets/allschool/s7.jpg";
+import s8 from "../../assets/allschool/s8.jpg";
+import s9 from "../../assets/allschool/s9.jpg";
 // import Confetti from "../Confetti";
 import Button from "../Button";
 const Section = styled.section`
@@ -130,55 +138,55 @@ const School = () => {
           name="เทพศิรินทร์ร่มเกล้า"
           subtitle="กรุงเทพมหานคร"
           link="https://dsr.ac.th/"
-          // img={}
+          img={s1}
         />
         <ProjectComponent
           name="เทพศิรินทร์คลองสิบสาม"
           subtitle="ปทุมธานี"
           link="http://www.dsp.ac.th/"
-          // img={}
+          img={s2}
         />
         <ProjectComponent
           name="เทพศิรินทร์นนทบุรี"
           subtitle="นนทบุรี"
           link="https://www.tsn.ac.th/web/"
-          // img={}
+          img={s3}
         />
         <ProjectComponent
           name="เทพศิรินทร์พุแค"
           subtitle="สระบุรี"
           link="http://www.debsirinphukhae.ac.th/"
-          // img={}
+          img={s4}
         />
         <ProjectComponent
           name="เทพศิรินทร์ลาดหญ้า"
           subtitle="กาญจนบุรี"
           link="http://www.dsl.ac.th/"
-          // img={}
+          img={s5}
         />
         <ProjectComponent
           name="เทพศิรินทร์ขอนแก่น"
           subtitle="ขอนแก่น"
           link="https://dskk.ac.th/"
-          // img={}
+          img={s6}
         />
         <ProjectComponent
           name="เทพศิรินทร์เชียงใหม่"
           subtitle="เชียงใหม่"
           link="http://www.dsc.ac.th/"
-          // img={}
+          img={s7}
         />
         <ProjectComponent
           name="เทพศิรินทร์๙"
           subtitle="เชียงใหม่"
           link="https://www.debsrin9.blogspot.com/"
-          // img={}
+          img={s8}
         />
         <ProjectComponent
           name="เทพศิรินทร์สมุทรปราการ"
           subtitle="สมุทรปราการ"
           link="http://www.debsirinsp.ac.th/"
-          // img={}
+          img={s9}
         />
       </Container>
     </Section>

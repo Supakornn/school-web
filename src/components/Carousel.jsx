@@ -6,11 +6,12 @@ import "swiper/css/effect-cards";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
 import { Pagination, Navigation, Autoplay, EffectCards } from "swiper";
-import img1 from "../assets/aboutpic/1.jpg";
-import img2 from "../assets/aboutpic/2.jpg";
-import img3 from "../assets/aboutpic/3.jpg";
-import img4 from "../assets/aboutpic/4.jpg";
+import img1 from "../assets/about/1.jpg";
+import img2 from "../assets/about/2.jpg";
+import img3 from "../assets/about/3.jpg";
+import img4 from "../assets/about/4.jpg";
 import Arrow from "../assets/svg/Arrow.svg";
+
 const Container = styled.div`
   width: 25vw;
   height: 70vh;

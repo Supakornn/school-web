@@ -3,6 +3,12 @@ import styled from "styled-components";
 import DrawSvg from "../DrawSvg";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import t1 from "../../assets/tower/t1.png";
+import t2 from "../../assets/tower/t2.png";
+import t3 from "../../assets/tower/t3.png";
+import t4 from "../../assets/tower/t4.png";
+import t5 from "../../assets/tower/t5.png";
+import t6 from "../../assets/tower/t6.png";
 
 const Section = styled.section`
   min-height: 100vh;
@@ -241,20 +247,38 @@ const Inside = () => {
             addToRef={addToRefs}
             title="ตึกเยาวมาลย์"
             subtext="ตึกเรียนมัธยมต้น(ม.1-2)และข้างล่างเป็นโรงอาหาร"
+            img={t1}
           />
           <AwardItem
             addToRef={addToRefs}
             title="ตึกเทิดพระเกียรติ"
             subtext="อาคารสำหรับจัดกิจกรรมพิธีของแต่ระดับชั้นและ ชั้นล่างเป็นห้องอาหารติดแอร์"
+            img={t2}
           />
-          <AwardItem addToRef={addToRefs} title="ตึกนิภานพดล" subtext="ตึกเรียนมัธยมต้น(ม.3)" />
+          <AwardItem
+            addToRef={addToRefs}
+            title="ตึกนิภานพดล"
+            subtext="ตึกเรียนมัธยมต้น(ม.3)"
+            img={t3}
+          />
           <AwardItem
             addToRef={addToRefs}
             title="ตึกแม้นศึกษาสถาน"
             subtext="ตึกเรียนมัธยมปลาย(ม.6)"
+            img={t4}
           />
-          <AwardItem addToRef={addToRefs} title="ตึกภาณุรังสี" subtext="ตึกเรียนมัธยมปลาย(ม.4-5)" />
-          <AwardItem addToRef={addToRefs} title="ตึกโชฏึกเลาหะเศรษฐี" subtext="พิพิธภัณฑ์" />
+          <AwardItem
+            addToRef={addToRefs}
+            title="ตึกภาณุรังสี"
+            subtext="ตึกเรียนมัธยมปลาย(ม.4-5)"
+            img={t5}
+          />
+          <AwardItem
+            addToRef={addToRefs}
+            title="ตึกโชฏึกเลาหะเศรษฐี"
+            subtext="พิพิธภัณฑ์"
+            img={t6}
+          />
         </Items>
       </Container>
     </Section>

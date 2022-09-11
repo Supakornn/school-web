@@ -61,7 +61,7 @@ const Title = styled.h2`
   margin: 0 auto;
 
   span {
-    background-image: linear-gradient(135deg, #7dce13, 10%, #f2d388 100%) a;
+    background-image: linear-gradient(135deg, #7dce13, 10%, #f2d388 100%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     -webkit-box-decoration-break: clone;
@@ -110,6 +110,7 @@ const SubTextLight = styled.p`
   width: 100%;
   margin: 1rem auto;
   font-weight: 400;
+
   @media (max-width: 64em) {
     width: 100%;
     text-align: center;

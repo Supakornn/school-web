@@ -1,5 +1,5 @@
 import React from "react";
-import main from "../assets/mainvideo/main.jpg";
+import main from "../assets/main.jpg";
 import styled from "styled-components";
 
 const PicContainer = styled.div`
