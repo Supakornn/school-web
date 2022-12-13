@@ -9,20 +9,20 @@ import School from "./components/sections/School";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
 function App() {
-  return (
-    <>
-      <GlobalStyles />
-      <ThemeProvider theme={light}>
-        <Nav />
-        <Home />
-        <About />
-        <Inside />
-        <School />
-        <Footer />
-        <ScrollToTop />
-      </ThemeProvider>
-    </>
-  );
+   return (
+      <>
+         <GlobalStyles />
+         <ThemeProvider theme={light}>
+            <Nav />
+            <Home />
+            <About />
+            <Inside />
+            <School />
+            <Footer />
+            <ScrollToTop />
+         </ThemeProvider>
+      </>
+   );
 }
 
 export default App;
